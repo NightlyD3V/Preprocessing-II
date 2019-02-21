@@ -244,3 +244,11 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  width: 50%;
+  color: white;
+  background-color: #2f8195;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
