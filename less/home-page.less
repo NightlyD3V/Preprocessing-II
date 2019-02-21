@@ -3,6 +3,7 @@
     display: flex;
     padding: 10px 100px 10px 100px;
     border-bottom: 2px dashed @navigation-border;
+    //FEELS KINDA HACKY
     margin-left: -100px;
     margin-right: -100px;
     justify-content: flex-start;
@@ -31,6 +32,9 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      p {
+        text-align: left;
+      }
       @media @mobile {
         width: 100%;
         padding: 20px;
@@ -78,13 +82,15 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
+    p {
+      text-align: left;
+    }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
@@ -93,6 +99,9 @@
       flex-direction: column;
     }
     .destination {
+      h4 {
+        text-align: center;
+      }
       width: 30%;
       margin-bottom: 30px;
       @media @mobile {
@@ -102,6 +111,12 @@
     }
     .btn {
       .parametric-button(150px);
+      .keyframes(pulse; {
+        0% { background-color: @eastern-blue; }
+        100% { background-color: @silver; }
+        });
+    
+      .animation(pulse 5s infinite alternate);
       @media @mobile {
         margin: 0 auto;
         width: 100%;

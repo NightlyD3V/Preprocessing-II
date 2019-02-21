@@ -183,6 +183,7 @@ nav {
   }
 }
 nav a {
+  font-size: 12px;
   text-decoration: none;
   color: black;
   padding: 10px;
@@ -192,7 +193,7 @@ nav a {
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
-.footer p {
+p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
@@ -235,6 +236,9 @@ nav a {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+.home .content-section .text-content p {
+  text-align: left;
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
@@ -294,6 +298,9 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick p {
+  text-align: left;
+}
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
@@ -302,6 +309,9 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination h4 {
+  text-align: center;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -318,6 +328,33 @@ nav a {
   text-align: center;
   justify-content: flex-start;
   font-size: 1.5rem;
+  -webkit-animation: pulse 5s infinite alternate;
+  -moz-animation: pulse 5s infinite alternate;
+  animation: pulse 5s infinite alternate;
+}
+@-moz-keyframes pulse {
+  0% {
+    background-color: #17A2B8;
+  }
+  100% {
+    background-color: #C0C0C0;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #17A2B8;
+  }
+  100% {
+    background-color: #C0C0C0;
+  }
+}
+@keyframes pulse {
+  0% {
+    background-color: #17A2B8;
+  }
+  100% {
+    background-color: #C0C0C0;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
