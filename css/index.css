@@ -169,10 +169,18 @@ img {
   margin: 0 auto;
 }
 nav {
-  display: flex;
   align-items: center;
-  width: 80%;
+  width: 60%;
+  display: flex;
   justify-content: flex-end;
+  margin-left: 150px;
+}
+@media (max-width: 500px) {
+  nav {
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 nav a {
   text-decoration: none;
@@ -192,11 +200,25 @@ nav a {
 }
 .home .header {
   display: flex;
-  justify-content: center;
   padding: 10px 100px 10px 100px;
   border-bottom: 2px dashed #C0C0C0;
   margin-left: -100px;
   margin-right: -100px;
+  justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  .home .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home .header h1 {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .home .header h1 {
+    text-align: center;
+  }
 }
 .home .content-section {
   margin: 30px 0;

@@ -1,11 +1,21 @@
 .home {
   .header {
     display: flex;
-    justify-content: center;
     padding: 10px 100px 10px 100px;
     border-bottom: 2px dashed @navigation-border;
     margin-left: -100px;
     margin-right: -100px;
+    justify-content: flex-start;
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .header h1 {
+    width: 45%;
+    @media @mobile {
+      text-align:center;
+    }
   }
   .content-section {
     margin: 30px 0;
