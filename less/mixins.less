@@ -1,9 +1,11 @@
 // Mixins in here
-.parametric-button(@width: 50%, @font-color: white, @bg: rgb(47, 129, 149)) {
+.parametric-button(@width: 50%, @font-color: @white, @bg: @eastern-blue) {
     width: @width;
     color: @font-color;
     background-color: @bg;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     text-align: center;
+    justify-content: flex-start;
+    font-size: 1.5rem;
 }
