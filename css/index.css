@@ -237,6 +237,9 @@ p {
   width: 48%;
   padding-right: 1%;
 }
+.home .content-section .text-content h2 {
+  padding-left: 30px;
+}
 .home .content-section .text-content p {
   text-align: left;
 }
@@ -289,6 +292,9 @@ p {
   width: 75%;
   margin: 0 auto 30px;
 }
+.home .content-destination h2 {
+  text-align: center;
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -323,10 +329,10 @@ p {
   width: 150px;
   color: #FFFFFF;
   background-color: #17A2B8;
+  margin: 0 auto;
   padding: 12px;
   border-radius: 10px;
   text-align: center;
-  justify-content: flex-start;
   font-size: 1.5rem;
   -webkit-animation: pulse 5s infinite alternate;
   -moz-animation: pulse 5s infinite alternate;
