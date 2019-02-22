@@ -295,6 +295,9 @@ p {
 .home .content-destination h2 {
   text-align: center;
 }
+.home .content-destination p {
+  text-align: left;
+}
 .home .content-destination img {
   border-radius: 10px;
 }
