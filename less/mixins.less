@@ -1,1 +1,33 @@
 // Mixins in here
+.parametric-button(@width: 50%, @font-color: @white, @bg: @eastern-blue) {
+    width: @width;
+    color: @font-color;
+    background-color: @bg;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+// .keyframes(@name, @arguments) {
+//     @keyframes @name {.animation-mixin;}
+//     @-webkit-keyframes @name {.animation-mixin;}
+//     @-moz-keyframes @name {.animation-mixin;}
+// }
+// .animation-mixin(@name, @duration: infinite, @delay: 0, @ease: ease) {
+//     animation: @name @duration @delay @ease;
+//     -webkit-animation: @name @duration @delay @ease;
+//     -moz-animation: @name @duration @delay @ease;
+// }
